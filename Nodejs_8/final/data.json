@@ -1,0 +1,81 @@
+[
+  {
+    "id": 1,
+    "name": "Modern Sofa",
+    "type": "Sofa",
+    "dimensions": {
+      "length": "180 cm",
+      "width": "90 cm",
+      "height": "75 cm"
+    },
+    "material": "Fabric and Wood",
+    "price": 15000,
+    "availability": true,
+    "features": [
+      "Removable cushions",
+      "Durable wood frame",
+      "Available in multiple colors"
+    ],
+    "image": "https://images.pexels.com/photos/4352247/pexels-photo-4352247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  },
+  {
+    "id": 2,
+    "name": "Dining Table",
+    "type": "Table",
+    "dimensions": {
+      "length": "120 cm",
+      "width": "75 cm",
+      "height": "75 cm"
+    },
+    "material": "Wood",
+    "price": 10000,
+    "availability": true,
+    "features": ["Seats 4 people", "Scratch-resistant surface"],
+    "image": "https://images.pexels.com/photos/2930894/pexels-photo-2930894.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  },
+  {
+    "id": 3,
+    "name": "Office Chair",
+    "type": "Chair",
+    "dimensions": {
+      "length": "60 cm",
+      "width": "60 cm",
+      "height": "100 cm"
+    },
+    "material": "Mesh and Metal",
+    "price": 7000,
+    "availability": true,
+    "features": ["Ergonomic design", "Adjustable height"],
+    "image": "https://images.pexels.com/photos/2528116/pexels-photo-2528116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  },
+  {
+    "id": 4,
+    "name": "Bookshelf",
+    "type": "Shelf",
+    "dimensions": {
+      "length": "80 cm",
+      "width": "40 cm",
+      "height": "200 cm"
+    },
+    "material": "Plywood",
+    "price": 8000,
+    "availability": false,
+    "features": ["5 spacious shelves", "Easy assembly"],
+    "image": "https://images.pexels.com/photos/1907785/pexels-photo-1907785.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  },
+  {
+    "id": 5,
+    "name": "Bed Frame",
+    "type": "Bed",
+    "dimensions": {
+      "length": "200 cm",
+      "width": "150 cm",
+      "height": "50 cm"
+    },
+    "material": "Plywood",
+    "price": 12000,
+    "availability": true,
+    "features": ["Durable steel construction", "Under-bed storage space"],
+    "image": "https://images.pexels.com/photos/7055750/pexels-photo-7055750.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  }
+]

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 62.5%;
+      }
+
+      body {
+        color: #fff;
+        background: #000;
+        font-family: 'Poppins', serif;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 80%;
+        margin: 50px auto;
+      }
+      .nav_icon {
+        font-size: 2rem;
+      }
+      .nav_home {
+        font-size: 1.5rem;
+        color: #fff;
+      }
+
+      .overview {
+        max-width: 70%;
+        margin: 0 auto;
+        display: flex;
+        gap: 10rem;
+        align-items: center;
+      }
+      .overview .product_img {
+        max-width: 35%;
+      }
+      .overview .product_img img {
+        width: 100%;
+      }
+      .product_title {
+        font-size: 4rem;
+      }
+      .product_type {
+        font-weight: 300;
+        font-size: 1.5rem;
+        font-style: italic;
+      }
+      .product_diamentionality {
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+      .product_material {
+        font-size: 2rem;
+        margin: 10px 0;
+      }
+      .product_material_text {
+        font-style: italic;
+      }
+      .product_price {
+        font-size: 3rem;
+        font-weight: 600;
+      }
+      .product_availability {
+        font-weight: 200;
+        font-size: 1.5rem;
+      }
+      .product_features {
+        margin: 20px 0;
+      }
+      .product_features li {
+        font-size: 1.5rem;
+      }
+      .product_features h3 {
+        font-size: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/" class="nav_home">/Home</a>
+      <h1 class="nav_icon">Furniture</h1>
+    </nav>
+    <div class="overview">
+      <div class="product_img">
+        <img src="{%IMAGE%}" alt="" />
+      </div>
+      <div class="product_info">
+        <h2 class="product_title">{%TITLE%}</h2>
+        <p class="product_type">{%TYPE%}</p>
+        <h4 class="product_diamentionality">{%DIMENSIONS%}</h4>
+        <p class="product_material">
+          Material : <span class="product_material_text">{%MATERIAL%}</span>
+        </p>
+        <h2 class="product_price">₹ {%PRICE%}</h2>
+        <h5 class="product_availability">{%AVAILABLILTY%}</h5>
+        <ul class="product_features">
+          <h3>Features</h3>
+          {%FEATURES%}
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
