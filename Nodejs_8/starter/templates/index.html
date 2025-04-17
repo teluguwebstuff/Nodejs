@@ -11,7 +11,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML + CSS</title>
-
     <style>
       * {
         padding: 0;
@@ -80,7 +79,59 @@
     </style>
   </head>
   <body>
-    <h1 class="title">Furniture</h1>
-    <div class="products_container">{%PRODCUTSCARDS%}</div>
+    <h1 class="title">Ecommerce</h1>
+    <div class="products_container">
+      <a href="/product/{%ID%}">
+        <div class="product top">
+          <div class="product_img">
+            <img src="./images/Modern_sofa.jpg" alt="bed frame" />
+          </div>
+          <div class="product_info">
+            <h2 class="product_title">Modern Sofa</h2>
+            <p class="product_price">₹ 15000</p>
+          </div>
+        </div>
+      </a>
+
+      <div class="product bottom">
+        <div class="product_img">
+          <img src="./images/Dining_Table.jpg" alt="bed frame" />
+        </div>
+        <div class="product_info">
+          <h2 class="product_title">Dining Table</h2>
+          <p class="product_price">₹ 8000</p>
+        </div>
+      </div>
+
+      <div class="product top">
+        <div class="product_img">
+          <img src="./images/Office_chair.jpg" alt="bed frame" />
+        </div>
+        <div class="product_info">
+          <h2 class="product_title">Office Chair</h2>
+          <p class="product_price">₹ 10000</p>
+        </div>
+      </div>
+
+      <div class="product bottom">
+        <div class="product_img">
+          <img src="./images/bookshelf.jpg" alt="bed frame" />
+        </div>
+        <div class="product_info">
+          <h2 class="product_title">Bookshelf</h2>
+          <p class="product_price">₹ 4000</p>
+        </div>
+      </div>
+
+      <div class="product top">
+        <div class="product_img">
+          <img src="./images/Bed_frame.jpg" alt="bed frame" />
+        </div>
+        <div class="product_info">
+          <h2 class="product_title">Bed Frame</h2>
+          <p class="product_price">₹ 15000</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
