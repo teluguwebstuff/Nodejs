@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 class="logo">Emp Database Management System</h1>
+      <ul class="nav_links">
+        <li class="nav_item">
+          <a href="/new" class="nav_link">Add New Employee</a>
+        </li>
+        <li class="nav_item">
+          <a href="/" class="nav_link">Home</a>
+        </li>
+      </ul>
+    </nav>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Designation</th>
+          <th>Salary</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Avinash</td>
+          <td>Developer</td>
+          <td>20000</td>
+          <td>
+            <div class="action_btns">
+              <a href="#" class="btn btn-edit">Edit</a>
+              <a href="#" class="btn btn-delete">Delete</a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">No Employees data</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <form action="/" method="post" class="form">
+      <h2 class="heading">Add New Employee</h2>
+      <div class="input_group">
+        <label for="name" class="input_label">Employee Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter Employee name"
+          class="input"
+        />
+      </div>
+
+      <div class="input_group">
+        <label for="Designation" class="input_label"
+          >Employee Designation</label
+        >
+        <input
+          type="text"
+          name="Designation"
+          id="Designation"
+          placeholder="Enter Employee Designation"
+          class="input"
+        />
+      </div>
+
+      <div class="input_group">
+        <label for="Salary" class="input_label">Employee Salary</label>
+        <input
+          type="text"
+          name="Salary"
+          id="Salary"
+          placeholder="Enter Employee Salary"
+          class="input"
+        />
+      </div>
+
+      <input
+        type="submit"
+        name="add_emp"
+        class="form_submit"
+        value="Add Employee"
+      />
+    </form>
+
+    <form action="/" method="post" class="form">
+      <h2 class="heading">Edit Employee Details</h2>
+      <div class="input_group">
+        <label for="name" class="input_label">Employee Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter Employee name"
+          class="input"
+        />
+      </div>
+
+      <div class="input_group">
+        <label for="Designation" class="input_label"
+          >Employee Designation</label
+        >
+        <input
+          type="text"
+          name="Designation"
+          id="Designation"
+          placeholder="Enter Employee Designation"
+          class="input"
+        />
+      </div>
+
+      <div class="input_group">
+        <label for="Salary" class="input_label">Employee Salary</label>
+        <input
+          type="text"
+          name="Salary"
+          id="Salary"
+          placeholder="Enter Employee Salary"
+          class="input"
+        />
+      </div>
+
+      <input
+        type="submit"
+        name="add_emp"
+        class="form_submit"
+        value="Save Details"
+      />
+    </form>
+  </body>
+</html>

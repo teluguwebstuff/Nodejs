@@ -1,0 +1,32 @@
+<%- include("./partials/header.ejs") -%>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Designation</th>
+      <th>Salary</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% emps.forEach((emp) =>{ %>
+    <tr>
+      <td><%= emp.name %></td>
+      <td><%= emp.desigination %></td>
+      <td><%= emp.salary %></td>
+      <td>
+        <div class="action_btns">
+          <a href="/edit/<%= emp._id  %>" class="btn btn-edit">Edit</a>
+          <a href="/delete/<%= emp._id  %>" class="btn btn-delete">Delete</a>
+        </div>
+      </td>
+    </tr>
+
+    <% }) %>
+    <tr>
+      <td colspan="4">No Employees data</td>
+    </tr>
+  </tbody>
+</table>
+
+<%- include("./partials/footer.ejs") -%>
