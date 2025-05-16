@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="imgs_container">
+      <div class="img_contanier">
+        <div class="img">
+          <img src="" alt="Image" />
+        </div>
+        <form action="/" method="post">
+          <button class="btn btn-delete">
+            <form action="/delete?_method=DELETE" method="post">
+              <input type="hidden" name="_method" value="DELETE" />
+              <a href="/delete">Delete</a>
+            </form>
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
